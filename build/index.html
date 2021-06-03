@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Room homepage</title>
+  <!-- preload fonts  -->
+  <link rel="preload" href="fonts/Spartan-Medium.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/Spartan-Medium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Spartan-SemiBold.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/Spartan-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Spartan-Bold.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/Spartan-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <!-- css -->
+  <link rel="stylesheet" href="css/styles.min.css">
+</head>
+
+<body>
+  <!-- header top -->
+  <header class="header">
+  <div class="header-container">
+    <!-- burger -->
+    <button class="header-burger burger" type="button">
+      <span class="burger__line burger__line_top"></span>
+      <span class="burger__line burger__line_middle"></span>
+      <span class="burger__line burger__line_bottom"></span>
+    </button>
+    <a href="#no-scroll" class="header-logo" data-scroll>
+      <svg class="logo__svg-icon">
+        <use xlink:href="./svg/sprite.svg#logo"></use>
+      </svg>
+    </a>
+    <nav class="header-nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="#no-scroll" class="nav__link" data-scroll data-close>
+            home
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#shop" class="nav__link" data-scroll data-close>
+            shop
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#about" class="nav__link" data-scroll data-close>
+            about
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#no-scroll" class="nav__link" data-scroll data-close>
+            contact
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+  <main class="grid-container">
+
+    <div class="hero">
+  <div id="hero-slider" class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <picture>
+          <source srcset="img/hero/1_mobile.webp" type="image/webp" media="(max-width: 424px)">
+          <source srcset="img/hero/1.webp" type="image/webp" media="(min-width: 425px)">
+          <img src="img/hero/1_mobile.jpg" class="hero-slider__img" alt="hero slide">
+        </picture>
+      </div>
+      <div class="swiper-slide">
+        <picture>
+          <source srcset="img/hero/2_mobile.webp" type="image/webp" media="(max-width: 424px)">
+          <source srcset="img/hero/2.webp" type="image/webp" media="(min-width: 425px)">
+          <img src="img/hero/2_mobile.jpg" class="hero-slider__img" alt="hero slide">
+        </picture>
+      </div>
+      <div class="swiper-slide">
+        <picture>
+          <source srcset="img/hero/3_mobile.webp" type="image/webp" media="(max-width: 424px)">
+          <source srcset="img/hero/3.webp" type="image/webp" media="(min-width: 425px)">
+          <img src="img/hero/3_mobile.jpg" class="hero-slider__img" alt="hero slide">
+        </picture>
+      </div>
+    </div>
+  </div>
+  <button class="swiper-prev" type="button"></button>
+  <button class="swiper-next" type="button"></button>
+</div>
+    <section id="shop" class="innovation">
+  <h1 class="title">
+    Discover innovative ways to decorate
+  </h1>
+  <p class="description innovation-description">
+    We provide unmatched quality, comfort, and style far property owners across the country. Our experts combine form
+    and function in bringing your vision to life. Create a room in your own style with our collection and make your
+    property a reflecttion of you and what you love.
+  </p>
+  <a href="#no-scroll" class="shop-link">
+    shop now
+    <svg class="shop-link__svg-icon">
+      <use xlink:href="./svg/sprite.svg#icon-arrow"></use>
+    </svg>
+  </a>
+</section>
+    <section id="about" class="about">
+  <picture class="img_dark">
+    <source srcset="img/about/dark.webp" type="image/webp">
+    <img src="img/about/dark.jpg" alt="about dark">
+  </picture>
+
+  <div class="about-text">
+    <h2 class="about-header">
+      about our furniture
+    </h2>
+
+    <p class="description about-description">
+      Our multifunctional collection blends design and function to suit your individual taste. Make each room unique, or
+      pick a cohesive theme that best express your interests and what inspires you. Find the furniture pieces you need,
+      from traditional to contemporary styles or anything in between. Product specialists are available to help you
+      create your dream space.
+    </p>
+  </div>
+
+  <picture class="img_light">
+    <source srcset="img/about/light.webp" type="image/webp">
+    <img src="img/about/light.jpg" alt="about light">
+  </picture>
+
+</section>
+
+  </main>
+  <!-- js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollToPlugin.min.js"></script>
+  <script src="js/scripts.js"></script>
+  <script src="js/app.min.js"></script>
+</body>
+
+</html>
